@@ -8,6 +8,8 @@ gem "autoprefixer-rails"
 
 gem "font-awesome-sass", "~> 6.1"
 
+gem "pry-byebug"
+
 gem "simple_form"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
