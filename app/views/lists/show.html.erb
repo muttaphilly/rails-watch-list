@@ -1,0 +1,8 @@
+<h1><%= @list.name %></h1>
+
+<%= @lists.movies.each do |movie|
+ <li><%= movie class="title"></movie %></li>
+  <% end %>
+<% end %>
+<br>
+<%= link_to 'Home', root_path %>

@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>New List</h1>
+  <%= simple_form_for @list do |f| %>
+    <%= f.input :name %>
+    <%= f.association :movies %>
+    <%= f.button :submit %>
+  <% end %>
+</div>
+<br>
+<%= link_to "Back to My Lists", lists_path %>
+<br>
+<%= link_to 'Home', root_path %>

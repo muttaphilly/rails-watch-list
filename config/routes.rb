@@ -5,4 +5,10 @@ Rails.application.routes.draw do
   # root "articles#index"
   root to: 'movies#home'
   get 'about', to: 'movies#about'
+  # Movie list actions
+  post 'lists', to: 'lists#create'
+  get 'lists/:id/edit', to: 'lists#edit'
+  resources :lists do
+    resources :bookmarks, only: [:create, :destroy]
+  end
 end
