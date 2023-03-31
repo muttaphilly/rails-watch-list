@@ -6,12 +6,14 @@ class ListsController < ApplicationController
   end
 
   def show
+    @movies = @list.movies
     @bookmark = Bookmark.new
     @review = Review.new(list: @list)
   end
 
   def new
     @list = List.new
+    @movies = Movie.all
   end
 
   def create
