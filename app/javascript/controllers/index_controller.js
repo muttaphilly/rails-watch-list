@@ -1,7 +1,7 @@
-import { application } from "./application"
+import { Controller } from "@hotwired/stimulus"
 
-import TomSelectController from "./tom_select_controller.js"
-application.register("tom-select", TomSelectController)
-
-import StarRatingController from "./star_rating_controller.js"
-application.register("star-rating", StarRatingController)
+// Connects to data-controller="index"
+export default class extends Controller {
+  connect() {
+  }
+}
